@@ -103,3 +103,18 @@ Use these first for evidence checks:
 2. Check whether evidence applies to the user population (beginner/intermediate/advanced, age, injury status).
 3. Translate findings into simple, executable rules in `FITNESS.md`.
 4. Reassess every mesocycle using actual user adherence and recovery data.
+
+## Bodyweight/Calisthenics-Specific Sources
+
+Use these when the user requests bodyweight-focused programming:
+
+1. Reddit Bodyweight Fitness Recommended Routine:
+   https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine/
+2. Reddit Bodyweight Fitness Wiki index:
+   https://www.reddit.com/r/bodyweightfitness/wiki/index
+3. ExRx exercise library (movement substitutions and progressions):
+   https://exrx.net/
+4. NSCA education articles (programming and periodization context):
+   https://www.nsca.com/education/articles/
+
+When using community-sourced routines, validate with evidence-based principles and adapt to user constraints instead of copying directly.

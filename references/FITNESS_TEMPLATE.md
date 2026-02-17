@@ -28,8 +28,21 @@
 - Coaching style:
 - Common failure points (what causes skipped sessions):
 
+## Reminders and Automation
+
+- Reminders enabled: yes/no
+- Reminder method: heartbeat/cron/off
+- Reminder cadence:
+- Preferred reminder times:
+- Follow-up check-in times:
+- Timezone:
+- Quiet hours:
+- Delivery channel/target:
+- Last reminder setup update:
+
 ## Active Program
 
+- Program file path: `fitness/program.md`
 - Split:
 - Weekly schedule:
 - Current phase:
