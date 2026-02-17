@@ -32,9 +32,11 @@
 
 - Reminders enabled: yes/no
 - Reminder method: heartbeat/cron/off
+- Committed workout time/window:
 - Reminder cadence:
 - Preferred reminder times:
 - Follow-up check-in times:
+- Weekly review/check-in schedule:
 - Timezone:
 - Quiet hours:
 - Delivery channel/target:

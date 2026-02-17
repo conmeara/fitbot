@@ -108,13 +108,14 @@ When building or revising a plan:
 ## Reminder Automation (OpenClaw)
 
 - During onboarding, ask whether the user wants reminders.
-- Capture: cadence, preferred time window, timezone, quiet hours, and delivery preference.
+- Capture: committed workout time/window, follow-up preference, weekly check-in cadence/time, timezone, quiet hours, and delivery preference.
 - Choose one method:
   - Heartbeat method for flexible periodic nudges.
   - Cron method for exact-time reminders.
-- Default recommendation when user wants daily coaching:
-  - daily workout delivery at 07:00 (user timezone)
-  - follow-up check-in at 11:00 (user timezone)
+- Propose reminder timings anchored to the user's committed workout schedule:
+  - workout delivery aligned to the committed workout time/window
+  - follow-up check-in at user-preferred timing after the workout
+  - weekly review/check-in at user-selected day/time
 - Use `references/reminders-and-automation.md` for setup and command patterns.
 - Always ask before creating or changing cron jobs.
 - Record the chosen setup in `FITNESS.md`.

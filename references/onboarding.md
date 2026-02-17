@@ -25,9 +25,11 @@ Collect concise answers for:
 - Recovery constraints (sleep, stress, work schedule)
 - Environment constraints (for example weather-dependent training, travel, limited space)
 - Reminder preference (off, heartbeat nudges, or exact-time cron)
+- Committed workout time/window
 - Reminder cadence and preferred times
 - Quiet hours / do-not-disturb window
-- Preferred check-in rhythm (for example same-day follow-up at 11:00 after morning workout)
+- Preferred follow-up check-in timing after workout
+- Weekly check-in/review preference (day/time/frequency)
 - Program source preferences (for example Reddit Recommended Routine, existing coach plan, or custom)
 
 ## Step 3: Build Baseline Plan
@@ -60,7 +62,8 @@ At week end:
 1. Read `references/reminders-and-automation.md`.
 2. If the user wants reminders, select Heartbeat or Cron method.
 3. Confirm before creating or editing any scheduled job.
-4. Recommend a default two-touch loop when daily coaching is desired:
-   - workout delivery at 07:00
-   - follow-up check-in at 11:00
+4. Propose a reminder loop anchored to the committed workout schedule:
+   - workout delivery aligned to committed workout time
+   - follow-up check-in at user-preferred timing after workout
+   - weekly review/check-in at user-selected day/time
 5. Save reminder settings in `FITNESS.md`.

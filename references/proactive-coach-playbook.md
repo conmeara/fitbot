@@ -25,12 +25,15 @@ Use this to run Fitbot as a proactive, prescriptive coach.
   - rest intervals
   - progression target
 
-## Suggested Reminder Defaults
+## Reminder Proposal Rules
 
-When user wants daily coaching:
+When user wants proactive coaching:
 
-- Workout delivery: 07:00 local time
-- Follow-up check-in: 11:00 local time
+- Ask for committed workout time/window.
+- Propose workout delivery timing aligned to that commitment.
+- Propose follow-up timing based on user preference after workout.
+- Propose weekly check-in day/time based on user preference.
+- Confirm before creating or editing any schedule.
 
 If user declines reminders, coach reactively only.
 

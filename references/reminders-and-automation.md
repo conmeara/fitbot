@@ -13,18 +13,15 @@ Choose based on user needs:
 ## Capture These Settings During Onboarding
 
 - Cadence (daily, weekdays, specific days, weekly)
+- Committed workout time/window
 - Preferred reminder time and timezone
 - Follow-up check-in time
+- Weekly review/check-in day and time
 - Quiet hours
 - Delivery target (main session or specific channel)
 - Reminder style (short nudge vs detailed plan)
 
 Store these in `FITNESS.md` under `Reminders and Automation`.
-
-Default recommendation for proactive daily coaching:
-
-- workout delivery at 07:00
-- follow-up check-in at 11:00
 
 ## Heartbeat Method
 
@@ -67,8 +64,8 @@ Daily reminder example:
 ```bash
 openclaw cron add \
   --name "fitbot:daily-reminder" \
-  --cron "0 7 * * 1-5" \
-  --tz "America/Los_Angeles" \
+  --cron "<minute> <hour> * * <days>" \
+  --tz "<IANA_TIMEZONE>" \
   --session isolated \
   --message "Send today's workout reminder based on FITNESS.md and current plan." \
   --announce
@@ -79,8 +76,8 @@ Weekly review example:
 ```bash
 openclaw cron add \
   --name "fitbot:weekly-review" \
-  --cron "0 18 * * 0" \
-  --tz "America/Los_Angeles" \
+  --cron "<minute> <hour> * * <weekly-day>" \
+  --tz "<IANA_TIMEZONE>" \
   --session isolated \
   --message "Prompt weekly training review and update fitness/weekly/YYYY-Www.md if needed." \
   --announce
@@ -91,14 +88,23 @@ Daily follow-up example:
 ```bash
 openclaw cron add \
   --name "fitbot:daily-follow-up" \
-  --cron "0 11 * * 1-5" \
-  --tz "America/Los_Angeles" \
+  --cron "<minute> <hour> * * <days>" \
+  --tz "<IANA_TIMEZONE>" \
   --session isolated \
   --message "Ask how today's workout went, collect effort/pain feedback, and log to fitness/history/YYYY-MM-DD.md." \
   --announce
 ```
 
 If a job already exists, edit it instead of adding another.
+
+## Proposal Logic (No Hardcoded Defaults)
+
+- Propose schedule based on the user's committed workout window and stated preferences.
+- Present one recommended schedule and ask for confirmation before creating jobs.
+- Include three components when desired:
+  - workout delivery
+  - post-workout follow-up
+  - weekly review/check-in
 
 ## Safety and UX Notes
 

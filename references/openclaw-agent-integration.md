@@ -16,7 +16,7 @@ This skill handles fitness coaching logic. Core agent policy files should define
 - Use the `fitbot` skill for training plans, workout coaching, and fitness progress reviews.
 - Keep fitness user data in `FITNESS.md` and `fitness/` folders, especially `fitness/program.md` and `fitness/history/`.
 - During onboarding, ask whether the user wants reminders; configure via heartbeat or cron only with explicit confirmation.
-- For proactive coaching, default to a two-touch loop (07:00 workout delivery, 11:00 follow-up) unless user prefers different times.
+- For proactive coaching, propose a schedule based on the user's committed workout time, follow-up preference, and weekly review preference.
 - Respect quiet hours and avoid spam.
 ```
 
