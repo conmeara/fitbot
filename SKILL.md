@@ -1,9 +1,9 @@
 ---
-name: fitbot-coach
+name: fitbot
 description: Personalized fitness coaching with file-based onboarding, program design, workout logging, and progress reviews. Use when users ask for training plans, day-to-day workout coaching, progression decisions, deloads, or fitness accountability.
 ---
 
-# Fitbot Coach
+# Fitbot
 
 Use this skill for practical fitness coaching that stays personalized over time.
 
