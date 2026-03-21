@@ -39,6 +39,18 @@ All user data stays in the workspace:
 - Anything to monitor going forward.
 ```
 
+## Telegram Deployment
+
+When deploying FitBot through OpenClaw on Telegram, prefer a **single-agent, multi-account** setup:
+
+- Keep FitBot as a **skill** used by the main agent instead of creating a separate `fitbot` agent by default.
+- Keep the regular bot on `channels.telegram.accounts.default` and the coaching bot on `channels.telegram.accounts.fitbot`.
+- Set `session.dmScope: "per-account-channel-peer"` so `@Conor_Botbot` and `@Fit_Botbot` keep separate DM context.
+- Route coaching conversations through the `fitbot` Telegram account so the user sees the FitBot identity while the same agent does the work.
+- Create a dedicated `fitbot` agent only when FitBot truly needs a different model, tool policy, workspace, or persona.
+
+This is the recommended default deployment shape for FitBot.
+
 ## First Run
 
 When `FITNESS.md` is missing or empty, read `references/onboarding.md` and follow it. Onboarding gathers who they are, what they want, and how they want to be coached, then deep researches and builds their program.
